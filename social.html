@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>My Social Media Links</title>
+    <style>
+        body {
+            background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-top: 2rem;
+            font-family: 'Pacifico', cursive;
+            color: #fff;
+            text-shadow: 2px 2px #000;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            font-size: 50px;
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            margin: 4rem;
+            transition: all 0.3s ease;
+            width: 540px;
+            height: 220px;
+        }
+
+        button.telegram {
+            background-color: #2c2d31;
+        }
+
+        button i {
+            font-size: 4rem;
+        }
+
+        button.telegram:hover {
+            background-color: #36383d;
+        }
+
+        button.instagram {
+            background-color: #c13584;
+        }
+
+        button.iymana {
+            background-color: #b07a17;
+        }
+
+        button.instagram:hover {
+            background-color: #e1306c;
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            button {
+                display: block;
+                margin: 2rem;
+                transition: all 0.3s ease;
+                width: 240px;
+                height: 120px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>IYMANA EMPERIUM</h1>
+    <button onclick="onClickBnt('web')" class="iymana">Web Sayt</button>
+    <button onclick="onClickBnt('instagram')" class="instagram">Instagram <i class="fab fa-instagram"></i></button>
+    <button onclick="onClickBnt('telegram')" class="telegram">Telegram <i class="fab fa-telegram"></i></button>
+</body>
+<script>
+    function onClickBnt(text) {
+        if (text === 'web') {
+            location.replace('https://www.iymana.com/');
+        }
+        if (text == 'telegram') {
+            location.replace('https://t.me/+NQdwlIVjluUwNTcy');
+        }
+        if (text == 'instagram') {
+            location.replace('https://www.instagram.com/iymana_emperium/');   
+        }
+    }
+</script>
+</html>
